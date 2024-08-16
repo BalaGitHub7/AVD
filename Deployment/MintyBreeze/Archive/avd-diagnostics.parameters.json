@@ -1,0 +1,46 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "laWorkspaceName": {
+            "value": "MintyWorkspace"
+        },
+        "laWorkspaceSku": {
+            "value": "pergb2018"
+        },
+        "hostpoolName": {
+            "value": "MintyBreeze-Hostpool"
+        },
+        "workspaceName": {
+            "value": "MintyBreeze"
+        },
+        "hostpoolLogs": {
+            "value": {
+                "categories": [
+                    "Checkpoint",
+                    "Error",
+                    "Connection",
+                    "HostRegistration",
+                    "AgentHealthStatus"
+                ]
+            }
+        },
+        "appGroupLogs": {
+            "value": {
+                "categories": [
+                    "Error"
+                ]
+            }
+        },
+        "workspaceLogs": {
+            "value": {
+                "categories": [
+                    "Checkpoint",
+                    "Error",
+                    "Management",
+                    "Feed"
+                ]
+            }
+        }
+    }
+}
